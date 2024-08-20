@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-margin-top: 100px;
+}
+
+/* גלילה חלקה */
+html {
+    scroll-behavior: smooth;
+}
+
+/* אפקט פתיחה של הדף */
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10dec);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* עיצוב האדר */
+.header {
+    position: fixed;
+    height: 100px;
+    clear: both;
+    width: 100%;
+    padding: 25px 12%;
+    background: rgba(0, 0, 0, 0.733);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    animation: transitionIn 0.75s;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* עיצוב לוגו האתר */
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: lawngreen;
+    text-shadow: 0 0 25px lawngreen, 0 0 50px lawngreen;
+    transform: scale(1.1);
+}
+
+span {
+    color: lawngreen;
+}
+
+/* עיצוב בר הניווט */
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: lawngreen;
+    border-bottom: 3px solid lawngreen;
+}
+
+/* צור קשר */
+.contact {
+    padding: 10px 28px;
+    /* margin: 0 -110vh; */
+    display: block;
+    background-color: white;
+    color: #000;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: lawngreen;
+    box-shadow: 0 0 25px lawngreen;
+    color: white;
+}
+
+/* hamburger - המבורגר */
+.hamburger button {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 8px;
+    display: none;
+}
+
+.hamburger a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s ease;
+}
+
+.hamburger .items {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.459);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hamburger:hover .items {
+    display: block;
+}
+
+.hamburger:hover button {
+    background-color: lawngreen;
+    box-shadow: 0 0 25px lawngreen;
+    color: white;
+}
+
+.hamburger a:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: lawngreen;
+}
+
+/* עיצוב קצת עליי */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+    animation: transitionIn 0.75s;
+    justify-content: center;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.home-content h3 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+    text-align: center;
+}
+
+/* עיצוב הכפתורים */
+.btn-box {
+    width: 380px;
+    display: flex;
+    gap: 2em;
+    margin: 0 auto;
+}
+
+/* כפתורים */
+.btn-1 {
+    padding: 15px 28px;
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.btn-2 {
+    padding: 15px 28px;
+    background-color: lawngreen;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-2:hover {
+    background-color: white;
+    color: lawngreen;
+    border: 2px solid lawngreen;
+}
+
+/* עיצוב תמונת הפרופיל */
+.img-box {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.img-box img {
+    border-radius: 50%;
+    width: 200px;
+    border: 6px solid lawngreen;
+}
+
+/* עיצוב הבר גלילה */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lawngreen;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+}
+
+/* עיצוב תיק העבודות */
+.cards-inner {
+    background: #000;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+}
+
+.container {
+    background: #000;
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+    animation: transitionIn 0.75s;
+    flex-direction: column;
+}
+
+.card {
+    width: 325px;
+    background-color: #f4f4f4;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.6s ease;
+    border: 3px solid lawngreen;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-image {
+    padding: 20px;
+}
+
+.card-image h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-image p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: lawngreen;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: white;
+    color: lawngreen;
+    border: 2px solid lawngreen;
+}
+
+/* תוכנות שהיו בשימוש */
+.softwere-image {
+    text-align: center;
+}
+
+.softwere-image img {
+    width: 50px;
+    border: 3px solid lawngreen;
+    border-radius: 50px;
+    margin: 2px;
+}
+
+/* עיצוב צור קשר */
+.contact-form {
+    animation: transitionIn 0.75s;
+}
+
+.contact-me {
+    margin-bottom: 50px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+
+.contact-form form {
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-form form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-form form .input-box input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+
+/* עיצוב פוטר */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: black;
+    animation: transitionIn 0.75s;
+}
+
+.footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid lawngreen;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px lawngreen, 0 0 10px lawngreen;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover {
+    transform: scale(1.2)translateY(-10px);
+    color: lawngreen;
+    border: 2px solid lawngreen;
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: white;
+    border-bottom: 30x solid transparent;
+    transition: 0.3s ease;
+}
+
+.footer ul li a:hover {
+    border-bottom: 3px solid lawngreen;
+    color: lawngreen;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+    color: lawngreen;
+}
+
+/* מצב טאבלט */
+@media (max-width:768px) {
+
+    /* עיצוב בר הניווט + המבורגר */
+    .navbar a {
+        clear: both;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    /* עיצוב המבורגר */
+    .hamburger button {
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: 0;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .hamburger a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+
+    .hamburger .items {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.459);
+        min-width: 100px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        ;
+    }
+
+    .hamburger:hover .items {
+        display: block;
+    }
+
+    .hamburger:hover button {
+        background-color: lawngreen;
+        box-shadow: 0 0 25px lawngreen;
+        color: white;
+    }
+
+    .hamburger a:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: lawngreen;
+    }
+
+    /* צור קשר */
+    .contact {
+        display: none;
+    }
+
+    /* עיצוב קצת עליי */
+    .home {
+        width: 100%;
+        min-height: 100vh;
+        background: white;
+        display: inline-table;
+        align-items: center;
+        gap: 7em;
+        padding: 30px 12% 0;
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    /* עיצוב הכפתורים */
+    .btn-box {
+        width: 380px;
+        display: flex;
+        gap: 2em;
+        margin: 0 auto;
+    }
+
+    /* עיצוב תמונת הפרופיל */
+    .img-box {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    .img-box img {
+        border-radius: 50%;
+        width: 200px;
+        border: 6px solid lawngreen;
+    }
+
+    /* עיצוב תיק העבודות */
+    .card {
+        width: 300px;
+    }
+
+    /* עיצוב צור קשר */
+    .contact-form form {
+        max-width: 40em;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+}
+
+/* מצב מובייל */
+@media (max-width:576px) {
+
+    /* עיצוב האדר */
+    .header {
+        padding: 15px 12%;
+    }
+
+    /* עיצוב לוגו האתר */
+    .logo {
+        font-size: 35px;
+        color: white;
+        font-weight: 600;
+        padding: 0px 10px 10px 10px;
+        transition: 0.3s ease;
+    }
+
+    .logo:hover {
+        color: lawngreen;
+        text-shadow: 0 0 25px lawngreen, 0 0 50px lawngreen;
+        transform: scale(1.1);
+    }
+
+    /* עיצוב בר הניווט + המבורגר */
+    .navbar a {
+        clear: both;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        text-align: center;
+        border-bottom: 3px solid transparent;
+        display: block;
+        transition: 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: lawngreen;
+        border-bottom: 3px solid lawngreen;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    /* עיצוב המבורגר */
+    .hamburger button {
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border: 0;
+        cursor: pointer;
+        transition: 0.3s ease;
+        border-radius: 8px;
+        display: block;
+    }
+
+    .hamburger a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: 0.3s ease;
+        text-align: center;
+    }
+
+    .hamburger .items {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.459);
+        min-width: 100px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    .hamburger:hover .items {
+        display: block;
+    }
+
+    .hamburger:hover button {
+        background-color: lawngreen;
+        box-shadow: 0 0 25px lawngreen;
+        color: white;
+    }
+
+    .hamburger a:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: lawngreen;
+    }
+
+    /* צור קשר */
+    .contact {
+        display: none;
+    }
+
+    /* עיצוב קצת עליי */
+    .home {
+        width: 100%;
+        min-height: 100vh;
+        background: white;
+        display: inline-table;
+        align-items: center;
+        gap: 7em;
+        padding: 30px 12% 0;
+        justify-content: center;
+    }
+
+    .home-content {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-content h1 {
+        margin-top: 20px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* עיצוב הכפתורים */
+    .btn-box {
+        width: 380px;
+        display: flex;
+        gap: 2em;
+        margin: 0 auto;
+    }
+
+    /* עיצוב תמונת הפרופיל */
+    .img-box {
+        margin-top: 180px;
+        text-align: center;
+    }
+
+
+    /* עיצוב תמונת הפרופיל */
+    .img-box img {
+        border-radius: 50%;
+        width: 180px;
+    }
+
+    /* עיצוב צור קשר */
+    .contact-form form {
+        max-width: 25em;
+        margin: 1rem auto;
+        text-align: center;
+        margin-bottom: 3em;
+    }
+
+
+}

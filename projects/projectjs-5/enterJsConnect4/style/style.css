@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'heebo';
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+/* עיצוב הלוח */
+#board {
+    height: 540px;
+    width: 630px;
+
+    background-color: blue;
+    border: 10px solid navy;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* עיצוב חלונות האסימונים בלוח */
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: lightskyblue;
+    border-radius: 50%;
+    border: 5px solid navy;
+}
+
+/* שחקן אדום */
+.red-player {
+    background-color: red;
+}
+
+/* שחקן צהוב */
+.yellow-player {
+    background-color: yellow;
+}
+
+/* מצב טאבלט */
+@media (max-width:768px) {
+
+    /* עיצוב הלוח */
+    #board {
+        height: 450px;
+        width: 530px;
+    }
+
+    /* עיצוב חלונות האסימונים בלוח */
+    .tile {
+        height: 55px;
+        width: 55px;
+        margin: 5px;
+    }
+}
+
+/* מצב מובייל */
+@media (max-width:576px) {
+
+    /* עיצוב הלוח */
+    #board {
+        height: 300px;
+        width: 350px;
+    }
+
+    /* עיצוב חלונות האסימונים בלוח */
+    .tile {
+        height: 30px;
+        width: 30px;
+        margin: 7px;
+
+        border: 3px solid navy;
+    }
+}

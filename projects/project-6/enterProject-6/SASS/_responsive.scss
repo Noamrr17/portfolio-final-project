@@ -1,0 +1,222 @@
+@media (max-width:768px) {
+    .topyellowLine {
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        width: 300px;
+        height: 18px;
+    }
+
+    .img-whatsapp {
+        float: left;
+        margin: 20px 40px;
+        background: #FDBD03;
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+    }
+
+    .img-whatsapp img {
+        position: absolute;
+        top: 50px;
+        left: 54px;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .img-container {
+        margin: 0 auto;
+    }
+
+    .img-container>img {
+        width: 235px;
+        height: 320px;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .titles-container>h1 {
+        font: normal normal 900 50px/97px Heebo;
+        color: #FDBD03;
+        text-align: center;
+    }
+
+    .titles-container>p {
+        text-align: right;
+        font: normal normal normal 20px/29px Heebo;
+        color: #020253;
+        margin: 0 auto;
+    }
+
+    .form-control>label {
+        margin: 0 22vw;
+        font: normal normal bold 16px/24px Heebo;
+        color: #2C2C2C
+    }
+
+    .form-control>input {
+        width: 54vw;
+        height: 50px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 5px solid #FDBD03;
+        font-size: 30px;
+        text-align: right;
+    }
+
+    .form-control>textarea {
+        width: 54vw;
+        height: 143px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 5px solid #FDBD03;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .form-control-btn {
+        text-align: center;
+    }
+
+    .form-control-btn>input[type="submit"] {
+        width: 54vw;
+        border: 0;
+    }
+
+    .form-control {
+        display: flex;
+    }
+
+    .row {
+        display: block;
+        align-items: end;
+    }
+
+    .wrapper {
+        display: inline-flex;
+        margin: 0 auto;
+    }
+
+    .wrapper .icon {
+        margin: 1vh 0;
+    }
+
+    .wrapper .icon span {
+        height: 60px;
+        width: 60px;
+        display: block;
+        background: #FDBD03;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0px 3px 6px #00000029;
+        /* padding-left: 50px; */
+        margin: 100px 20px 0;
+    }
+
+    .wrapper .icon span i {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .bottomyellowLine {
+        width: 67.8vw;
+        height: 18px;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        float: right;
+        margin-top: 0;
+    }
+}
+
+@media (max-width:576px) {
+    .topyellowLine {
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        width: 440px;
+        height: 10px;
+    }
+
+    .img-whatsapp {
+        display: none;
+    }
+
+    .img-container {
+        text-align: center;
+    }
+
+    .img-container>img {
+        width: 200px;
+        height: 320px;
+        object-fit: contain;
+        display: flex;
+    }
+
+    .titles-container>p {
+        text-align: right;
+        font: normal normal normal 20px/29px Heebo;
+        color: #020253;
+        margin: 0 auto;
+    }
+
+    .form-control>label {
+        text-align: right;
+        margin: 0 14vw;
+        font: normal normal bold 16px/24px Heebo;
+        color: #2C2C2C;
+    }
+
+    .form-control>input {
+        width: 70vw;
+        height: 50px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 5px solid #FDBD03;
+        font-size: 30px;
+        text-align: right;
+    }
+
+    .form-control>textarea {
+        width: 70vw;
+        height: 143px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 5px solid #FDBD03;
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .form-control-btn {
+        text-align: center;
+    }
+
+    .form-control-btn>input[type="submit"] {
+        width: 70vw;
+        border: 0;
+    }
+
+    .wrapper {
+        display: inline-flex;
+        margin: 0 0 0 5vh;
+    }
+
+    .wrapper .icon {
+        margin: 2vh 0;
+    }
+
+    .wrapper .icon span {
+        height: 60px;
+        width: 60px;
+        display: block;
+        background: #FDBD03;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0px 3px 6px #00000029;
+        margin: 100px 20px 0;
+    }
+
+    .bottomyellowLine {
+        width: 67vw;
+        height: 10px;
+        background: #FDBD03 0% 0% no-repeat padding-box;
+        float: right;
+        margin-top: 0;
+    }
+}

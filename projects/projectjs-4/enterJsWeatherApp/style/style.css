@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* עיצוב רקע המסך */
+body {
+    background: #222;
+}
+
+/* עיצוב הכרטיס */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+/* עיצוב רוחב האלמנטים */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* עיצוב בר החיפוש */
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+/* עיצוב כפתור החיפוש */
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 30px;
+}
+
+/* עיצוב גודל ומיקום האלמנטים של המזג אוויר */
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+/* עיצוב גודל ורוחב הכתב של המעלות */
+.weather h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+/* עיצוב גודל רוחב ומיקום הכתב של העיר */
+.weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* מיקום וסידור האלמנטים של הלחות ומהירות הרוח */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-top: 50px;
+}
+
+/* סידור הכותרות של האלמנטים */
+.column {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+/* סידור גודל האייקונים של האלמנטים */
+.column img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+/* סידור גודל הכתב של נתוני הלחות */
+.humidity {
+    font-size: 28px;
+    margin-top: -6px;
+}
+
+/* סידור גודל הכתב של נתוני הרוח */
+.wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+/* נתוני מזג אוויר מוסתרים בעת פתיחת האפליקציה או בעת גילוי שגיאה בחיפוש עיר */
+.weather {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-out;
+}
+
+.weather.visible {
+    max-height: 1000px;
+    transition: max-height .5s ease-in;
+}
+
+/* סידור ומיקום כותרת השגיאה */
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 24px;
+    margin-top: 10px;
+    display: none;
+    transition: transform 0.6s ease;
+}
+
+/* רספונסיביות למצב מובייל */
+@media (max-width:576px) {
+
+    /* עיצוב הכרטיס */
+    .card {
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        color: #fff;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        padding: 40px 35px;
+        text-align: center;
+    }
+
+    /* עיצוב גודל ומיקום האלמנטים של המזג אוויר */
+    .weather-icon {
+        width: 170px;
+        margin-top: 30px;
+    }
+
+    /* מיקום וסידור האלמנטים של הלחות ומהירות הרוח */
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        margin-top: 50px;
+    }
+
+    /* סידור הכותרות של האלמנטים */
+    .column {
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* סידור גודל האייקונים של האלמנטים */
+    .column img {
+        width: 60px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width:462px) {
+
+    /* עיצוב הכרטיס */
+    .card {
+        width: 90%;
+        max-width: 470px;
+        background: linear-gradient(135deg, #00feba, #5b548a);
+        color: #fff;
+        margin: 10px auto 0;
+        border-radius: 20px;
+        padding: 40px 35px;
+        text-align: center;
+    }
+
+    /* עיצוב רוחב האלמנטים */
+    .search {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* עיצוב בר החיפוש */
+    .search input {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        color: #555;
+        padding: 10px 25px;
+        height: 60px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 16px;
+        font-size: 18px;
+        width: 10px;
+    }
+
+    /* עיצוב כפתור החיפוש */
+    .search button {
+        border: 0;
+        outline: 0;
+        background: #ebfffc;
+        border-radius: 50%;
+        width: 55px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .search button img {
+        width: 20px;
+    }
+
+    /* עיצוב גודל ורוחב הכתב של המעלות */
+    .weather h1 {
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    /* עיצוב גודל רוחב ומיקום הכתב של העיר */
+    .weather h2 {
+        font-size: 35px;
+        font-weight: 400;
+        margin-top: -10px;
+    }
+
+    /* מיקום וסידור האלמנטים של הלחות ומהירות הרוח */
+    .details {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+}

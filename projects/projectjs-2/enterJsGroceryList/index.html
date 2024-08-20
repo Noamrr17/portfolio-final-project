@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <title>Grocery List - רשימת סופר</title>
+
+</head>
+
+<body dir="rtl">
+    <div id="myDIV" class="header">
+        <h1>רשימת סופר</h1>
+        <div class="search-container">
+            <input type="text" id="myInput" placeholder="הקלד/י מוצר...">
+            <span onclick="newElement()" class="addBtn">הוסף</span>
+        </div>
+    </div>
+
+    <ul id="myUL">
+        <li>חלב יוטבתה</li>
+        <li class="checked">פסטרמה זוגלובק</li>
+        <li>דוריטוס</li>
+        <li>תירוש</li>
+        <li>דג דניס</li>
+        <li>אבטיח</li>
+    </ul>
+
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>

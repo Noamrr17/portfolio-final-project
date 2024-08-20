@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 8</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body dir="rtl">
+
+    <div class="container">
+        <form>
+            <h1>חוג ימאות לילדים ובני נוער</h1>
+            <p>מכורים אל הים? בואו להירשם לחוג ימאות שבו תוכלו ללמוד גלישה, שייט על קיאקים, תפעול סנוניות, תפעול סירות
+                מפרש ועוד...<br>הירשמו לחוג ואנחנו נענה לכם בהקדם.</p>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class='bx bxs-user'></i> שם מלא</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="number" id="number" required>
+                    <label for="number"><i class='bx bxs-phone'></i> מספר טלפון</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email"><i class='bx bxs-envelope'></i> אימייל</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class='bx bxs-message-rounded'></i> הודעה</label>
+            </div>
+
+            <button type="submit">שליחה <i class='bx bxs-paper-plane'></i></button>
+        </form>
+    </div>
+
+</body>
+
+</html>

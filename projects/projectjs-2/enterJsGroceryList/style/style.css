@@ -1,0 +1,287 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: heebo;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    background: #eee;
+    font-size: 25px;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+    background: #ddd;
+    border-right: 10px solid #FFC312;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+    background: green;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    top: 10px;
+    right: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+/* עיצוב כפתור הסגירה */
+.close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+/* עיצוב האדר */
+.header {
+    /* background-color: #530000; */
+    background-color: #530000;
+    padding: 30px 200px;
+    color: white;
+    text-align: center;
+}
+
+/* Clear floats after the header */
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* עיצוב תיבת החיפוש */
+.search-container input {
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+    width: 250px;
+    padding: 10px;
+    font-size: 18px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.4s ease-in-out;
+}
+
+.search-container input:focus {
+    width: 300px;
+}
+
+/* Style the "Add" button */
+/* עיצוב הכפתור */
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #555;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.addBtn:hover {
+    background-color: #0062b3;
+}
+
+/* עיצוב הגרירה של פריטי הרשימה */
+.myghostclass {
+    background-color: #f5f6fa;
+    border-right: 10px solid #FFC312;
+}
+
+.sortable-drag {
+    opacity: 0.0;
+}
+
+/* מצב טאבלט */
+@media (max-width:768px) {
+
+    /* עיצוב האדר */
+    .header {
+        background-color: #530000;
+        padding: 30px 100px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Clear floats after the header */
+    .header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* עיצוב תיבת החיפוש */
+    .search-container input {
+        margin: 0;
+        border: none;
+        border-radius: 25px;
+        width: 40vw;
+        padding: 10px;
+        font-size: 18px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: 0.4s ease-in-out;
+    }
+
+    .search-container input:focus {
+        width: 50vw;
+    }
+
+    /* עיצוב הגרירה של פריטי הרשימה */
+    .myghostclass {
+        background-color: #f5f6fa;
+        border-right: 10px solid #FFC312;
+    }
+
+    .sortable-drag {
+        opacity: 0.0;
+    }
+}
+
+/* מצב מובייל */
+@media (max-width:576px) {
+
+    /* Style the list items */
+    ul li {
+        cursor: pointer;
+        position: relative;
+        padding: 12px 8px 12px 10px;
+        background: #eee;
+        font-size: 25px;
+        transition: 0.2s;
+
+        /* make the list items unselectable */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Set all odd list items to a different color (zebra-stripes) */
+    ul li:nth-child(odd) {
+        background: #f9f9f9;
+    }
+
+    /* Darker background-color on hover */
+    ul li:hover {
+        background: #ddd;
+        border-right: 10px solid #FFC312;
+    }
+
+    /* When clicked on, add a background color and strike out text */
+    ul li.checked {
+        background: green;
+        color: #fff;
+        text-decoration: line-through;
+    }
+
+    /* Add a "checked" mark when clicked on */
+    ul li.checked::before {
+        position: absolute;
+        border-color: #fff;
+        border-style: solid;
+        top: 10px;
+        right: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+    }
+
+    /* Style the close button */
+    /* עיצוב כפתור הסגירה */
+    .close {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 12px 16px 12px 16px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .close:hover {
+        background-color: #f44336;
+        color: white;
+    }
+
+    /* עיצוב האדר */
+    .header {
+        background-color: #530000;
+        padding: 30px 20px;
+        color: white;
+        text-align: center;
+    }
+
+    /* Clear floats after the header */
+    .header:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* עיצוב תיבת החיפוש */
+    .search-container input {
+        margin: 0;
+        border: none;
+        border-radius: 25px;
+        width: 45vw;
+        padding: 10px;
+        font-size: 18px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: 0.4s ease-in-out;
+    }
+
+    .search-container input:focus {
+        width: 50vw;
+    }
+
+    /* עיצוב הגרירה של פריטי הרשימה */
+    .myghostclass {
+        background-color: #f5f6fa;
+        border-right: 10px solid #FFC312;
+    }
+
+    .sortable-drag {
+        opacity: 0.0;
+    }
+}

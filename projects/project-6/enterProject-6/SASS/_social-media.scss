@@ -1,0 +1,33 @@
+.wrapper {
+    display: inline-flex;
+    float: left;
+}
+
+.wrapper .icon {
+    margin: 0 2px;
+}
+
+.wrapper .icon span {
+    height: 60px;
+    width: 60px;
+    display: block;
+    background: #FDBD03;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-left: 30px;
+}
+
+.wrapper .icon span i {
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.bottomyellowLine {
+    width: 1038px;
+    height: 18px;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    float: left;
+    margin-top: 1vw;
+    margin-right: 30vw;
+}

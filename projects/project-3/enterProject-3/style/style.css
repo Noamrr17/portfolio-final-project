@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20vh;
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10dec);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+/* .background img {} */
+
+.banner-card img {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.banner-text h1 {
+    text-align: center;
+    font: normal normal bold 86px/113px Assistant;
+    color: #D3E10E;
+    margin-top: -45vh;
+}
+
+.banner-text p {
+    text-align: center;
+    font: normal normal normal 20px/26px Assistant;
+    color: #F9F9F9;
+}
+
+form {
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-control>input {
+    width: 20vw;
+    height: 50px;
+    font-size: 30px;
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 3px solid #D3E10E;
+}
+
+.form-control>label {
+    text-align: right;
+    font: normal normal bold 16px/21px Assistant;
+    color: #011560;
+}
+
+.form-control-btn>input {
+    width: 150px;
+    height: 50px;
+    background: #D3E10E 0% 0% no-repeat padding-box;
+    text-align: center;
+    font: normal normal bold 22px/30px Assistant;
+    border: 0;
+    color: #011560;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 1vh 0 3vh;
+    align-items: start;
+}
+
+@media (max-width:768px) {
+    .banner-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -25vh;
+    }
+
+    .banner-card img {
+        width: 100vw;
+        height: 75vh;
+        object-fit: cover;
+    }
+
+    .banner-text h1 {
+        text-align: center;
+        font: normal normal bold 60px/113px Assistant;
+        color: #D3E10E;
+        margin-top: -40vh;
+    }
+
+    .banner-text p {
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+        color: #F9F9F9;
+        margin: 20px 90px;
+    }
+
+    form {
+        display: grid;
+        align-items: flex-end;
+        padding: 50px;
+    }
+
+    .form-control>input {
+        width: 50vw;
+        height: 50px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 3px solid #D3E10E;
+    }
+
+    .form-control-btn>input {
+        width: 50vw;
+        height: 50px;
+        background: #D3E10E 0% 0% no-repeat padding-box;
+        text-align: center;
+        font: normal normal bold 22px/30px Assistant;
+        border: 0;
+        color: #011560;
+    }
+
+    .form-control {
+        flex-direction: column;
+        padding: 0 0 3vh;
+        align-items: start;
+    }
+}
+
+@media (max-width:576px) {
+    .banner-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -25vh;
+    }
+
+    .banner-card img {
+        width: 100vw;
+        height: 75vh;
+        object-fit: cover;
+    }
+
+    .banner-text h1 {
+        text-align: center;
+        font: normal normal bold 45px/113px Assistant;
+        color: #D3E10E;
+        margin-top: -40vh;
+    }
+
+    .banner-text p {
+        text-align: center;
+        font: normal normal normal 20px/26px Assistant;
+        color: #F9F9F9;
+        margin: 20px 90px;
+    }
+
+    form {
+        display: grid;
+        align-items: flex-end;
+        padding: 50px;
+    }
+
+    .form-control>input {
+        width: 70vw;
+        height: 50px;
+        background: #E5EEFF 0% 0% no-repeat padding-box;
+        border: 0;
+        border-bottom: 3px solid #D3E10E;
+    }
+
+    .form-control-btn>input {
+        width: 70vw;
+        height: 50px;
+        background: #D3E10E 0% 0% no-repeat padding-box;
+        text-align: center;
+        font: normal normal bold 22px/30px Assistant;
+        border: 0;
+        color: #011560;
+    }
+
+    .form-control {
+        flex-direction: column;
+        padding: 0 0 3vh;
+        align-items: start;
+    }
+}

@@ -1,0 +1,51 @@
+.form-container {
+    flex-direction: column;
+}
+
+.form-control>label {
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+    color: #2C2C2C;
+}
+
+.form-control>input {
+    width: 418px;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 5px solid #FDBD03;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.form-control>textarea {
+    width: 854px;
+    height: 143px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 5px solid #FDBD03;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.form-control-btn>input[type="submit"] {
+    width: 166px;
+    height: 50px;
+    text-align: center;
+    font: normal normal bold 22px/30px Heebo;
+    background: #FDBD03 0% 0% no-repeat padding-box;
+    color: #000000;
+    border: 0;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5em 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
