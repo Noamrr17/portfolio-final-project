@@ -6,12 +6,12 @@ HTML: The backbone of the web pages, providing the structure and content.
 CSS: Used for styling the HTML elements to create visually appealing layouts.
 SASS: A CSS pre-processor that allows for variables, nested rules, and more efficient stylesheets. (Used in Project 6)
 Bootstrap: A popular front-end framework that provides responsive design and pre-styled components. (Used in Project 5)
-JavaScript: New 6 projects with javascript technology are added into my portfolio project.
+JavaScript: New 7 projects with javascript technology are added into my portfolio project.
 API (Application Programming Interface): An application programming interface is a set of ready-made code libraries, commands, functions, and procedures that programmers can easily use without having to write them themselves
 so that they can use the application information they want to use for their application. (Used in Weather App)
 
 Project Overview
-This portfolio contains a gallery of 8 landing pages and 6 javascript projects that I have created. Each page is designed with different themes, styles and abilities to demonstrate the versatility and range of my design and development skills.
+This portfolio contains a gallery of 8 landing pages and 7 javascript projects that I have created. Each page is designed with different themes, styles and abilities to demonstrate the versatility and range of my design and development skills.
 
 Features
 Responsive design: Each landing page is fully responsive, ensuring a great user experience on both desktop, tablet and mobile devices.
@@ -53,6 +53,7 @@ javascript project: Calculator.
 javascript project: Weather App.
 javascript project: Connect 4.
 javascript project: Analog Clock.
+javascript project: Drawing Board
 
 Contact
 If you have any questions or would like to get in touch, please contact me at noamrr17@gmail.com].
